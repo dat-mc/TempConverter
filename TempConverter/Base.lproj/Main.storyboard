@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -14,41 +14,57 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TempConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="vLN-0q-QIM">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="vLN-0q-QIM">
+                                <rect key="frame" x="0.0" y="-44" width="320" height="656"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0ºС" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEc-sz-wsi">
-                                <rect key="frame" x="172" y="164" width="84" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="50I-xJ-iPc">
-                                <rect key="frame" x="18" y="449" width="392" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temp Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQC-dw-YEV">
-                                <rect key="frame" x="79" y="44" width="271" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JQC-dw-YEV">
+                                <rect key="frame" x="24.5" y="0.0" width="271" height="38"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhs-DC-cIG">
-                                <rect key="frame" x="176" y="743" width="76" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="50I-xJ-iPc">
+                                <rect key="frame" x="14" y="269" width="292" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="388" id="P88-Z1-c6m"/>
+                                </constraints>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºС" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEc-sz-wsi">
+                                <rect key="frame" x="126" y="160" width="68" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhs-DC-cIG">
+                                <rect key="frame" x="129.5" y="360" width="61" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="50I-xJ-iPc" firstAttribute="top" secondItem="fEc-sz-wsi" secondAttribute="bottom" constant="61" id="3qn-Vr-eML"/>
+                            <constraint firstItem="50I-xJ-iPc" firstAttribute="centerX" secondItem="vLN-0q-QIM" secondAttribute="centerX" id="Chn-KA-aKs"/>
+                            <constraint firstItem="50I-xJ-iPc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="DDQ-hz-8mx"/>
+                            <constraint firstItem="fEc-sz-wsi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EcL-fc-Hc5"/>
+                            <constraint firstItem="50I-xJ-iPc" firstAttribute="centerX" secondItem="Qhs-DC-cIG" secondAttribute="centerX" id="Huw-D3-lPQ"/>
+                            <constraint firstItem="Qhs-DC-cIG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SuF-2w-lTg"/>
+                            <constraint firstItem="JQC-dw-YEV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="X2k-L7-7rW"/>
+                            <constraint firstItem="50I-xJ-iPc" firstAttribute="centerX" secondItem="fEc-sz-wsi" secondAttribute="centerX" id="YRc-fR-ZEd"/>
+                            <constraint firstItem="50I-xJ-iPc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hKH-5X-ls2"/>
+                            <constraint firstItem="vLN-0q-QIM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="igj-OF-uhQ"/>
+                            <constraint firstItem="fEc-sz-wsi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jHy-89-3Il"/>
+                            <constraint firstItem="50I-xJ-iPc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lHF-Pf-xSb"/>
+                            <constraint firstItem="vLN-0q-QIM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="p26-yB-UP4"/>
+                            <constraint firstItem="JQC-dw-YEV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ucN-dR-d8I"/>
+                            <constraint firstItem="Qhs-DC-cIG" firstAttribute="top" secondItem="50I-xJ-iPc" secondAttribute="bottom" constant="61" id="w67-2N-tIw"/>
+                            <constraint firstItem="vLN-0q-QIM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="zDm-Jd-cd4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
